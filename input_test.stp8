@@ -1,0 +1,14 @@
+# A Sitepo-8 File!
+>$480				# programs start at line $480 by default
+
+set $000 %01010101
+
+ita
+
+add
+
+jiz $480
+
+set $000 %00000000
+
+jmp $fff
