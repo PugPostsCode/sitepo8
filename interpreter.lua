@@ -62,12 +62,12 @@ function interpreter:update()
 		memory[setLocation] = memory[getLocation]
 
 		-- erase old value
-		memory[getLocation] = utils.newByte
+		memory[getLocation] = utils.newByte()
 
 		print("moving "..getLocation.." to "..setLocation)
 
 		-- inc l register
-		registers.l = registers.l + 1
+		registers.l = registers.l + 5
 		
 	elseif instruction == "cop" then
 		-- get memory value to set
